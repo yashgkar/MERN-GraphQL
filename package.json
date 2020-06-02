@@ -1,0 +1,32 @@
+{
+  "name": "graphql-api-mongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashgkar/graphql-api.git"
+  },
+  "keywords": [
+    "graphql",
+    "api",
+    "mongodb",
+    "express",
+    "node"
+  ],
+  "author": "Yash Garudkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yashgkar/graphql-api/issues"
+  },
+  "homepage": "https://github.com/yashgkar/graphql-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^15.0.0"
+  }
+}
