@@ -6,20 +6,9 @@ const {
     GraphQLString
 } = require('graphql');
 const app = express();
+const schema = require('./schema/schema');
 
-const schema = new GraphQLSchema({
-    query: new GraphQLObjectType({
-        name: 'Hello World!',
-        fields: () => ({
-            message: {
-                type: GraphQLString,
-                resolve: () => { 'Hello world' }
-            }
-        })
-    })
-});
-
-app.get('/graphql', GraphQLHTTP({
+app.use('/graphql', GraphQLHTTP({
     schema: schema,
     graphiql: true
 }));
