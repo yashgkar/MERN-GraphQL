@@ -1,4 +1,6 @@
 .content{
-    margin: 0 25% 0 25%;
-    background-color: blueviolet;
+    margin: 5% 25% 5% 25%;
+    padding: 5px 10px;
+    background-color: rgb(42, 157, 143);
+    border-radius: 10px;
 }

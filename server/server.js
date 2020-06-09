@@ -9,6 +9,11 @@ const app = express();
 const schema = require('./schema/schema');
 const mongoose = require('mongoose');
 require('dotenv').config();
+const cors = require('cors');
+
+
+//allow cross-origin requests
+app.use(cors());
 
 mongoose.connect(process.env.MONGO_URI, {
     useUnifiedTopology: true,
