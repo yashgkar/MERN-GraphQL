@@ -8,6 +8,7 @@ body{
 .header{
     display: flex;
     justify-content: center;
+    animation: headerAnimation 1s forwards 0s ease;
 }
 
 .header h1 {
@@ -17,5 +18,18 @@ body{
     text-align: center;
     background-color: rgb(244, 162, 97);
     border-radius: 0 0 5px 5px;
-    /* box-shadow: 0 3px 3px rgba(0,0,0,0.3); */
+    /*box-shadow: 0 3px 3px rgba(66, 66, 66, 0.3); */
 }
+
+
+@keyframes headerAnimation{
+    0%{
+        transform: rotate(0) translateY(-100%);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(0) translateY(0);
+        opacity: 1;
+        }
+}
+

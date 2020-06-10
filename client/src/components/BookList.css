@@ -1,6 +1,41 @@
-.content{
-    margin: 5% 25% 5% 25%;
-    padding: 5px 10px;
-    background-color: rgb(42, 157, 143);
-    border-radius: 10px;
+.content {
+  animation: contentAnimation 1s forwards 0s ease;
+  margin: 4% 25% 4% 25%;
+  padding: 5px 10px;
+  background-color: rgb(42, 157, 143);
+  border-radius: 10px;
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #3498db;
+  width: 15px;
+  height: 15px;
+  margin: 4% 50%;
+  position: relative;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes contentAnimation {
+  0% {
+    transform: rotate(-15deg) translateY(-70%);
+    rotate: -15deg;
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0) translateY(0);
+    opacity: 1;
+    rotate: 0deg;
+    box-shadow: 0 3px 3px rgba(66, 66, 66, 0.3);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
