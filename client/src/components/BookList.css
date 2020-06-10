@@ -19,7 +19,7 @@
 
 @keyframes contentAnimation {
   0% {
-    transform: rotate(-15deg) translateY(-70%);
+    transform: rotate(0) translateY(-70%);
     rotate: -15deg;
     opacity: 0;
   }

@@ -8,7 +8,7 @@ body{
 .header{
     display: flex;
     justify-content: center;
-    animation: headerAnimation 1s forwards 0s ease;
+    animation: headerAnimation 0.8s forwards 0s ease;
 }
 
 .header h1 {

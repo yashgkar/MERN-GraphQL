@@ -13,9 +13,7 @@ const getBooksQuery = gql`
 `;
 
 class BookList extends Component {
-    state = {
-        loading: false
-    }
+  
   displayBooks() {
     var data = this.props.data;
     if (data.loading) {
