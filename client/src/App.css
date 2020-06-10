@@ -1,35 +1,50 @@
-body{
-    margin: 0;
-    padding: 0;
-    background-color: rgb(38, 70, 83);
-    color: rgb(255, 255, 255);
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(38, 70, 83);
+  color: rgb(255, 255, 255);
 }
 
-.header{
-    display: flex;
-    justify-content: center;
-    animation: headerAnimation 0.8s forwards 0s ease;
+.header {
+  display: flex;
+  justify-content: center;
+  font-family: "Metal Mania", cursive;
+  animation: headerAnimation 0.8s forwards 0s ease;
 }
 
 .header h1 {
-    width: max-content;
-    margin: 0;
-    padding:15px;
-    text-align: center;
-    background-color: rgb(244, 162, 97);
-    border-radius: 0 0 5px 5px;
-    /*box-shadow: 0 3px 3px rgba(66, 66, 66, 0.3); */
+  width: max-content;
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+  background-color: rgb(244, 162, 97);
+  border-radius: 0 0 5px 5px;
+  /*box-shadow: 0 3px 3px rgba(66, 66, 66, 0.3); */
 }
 
-
-@keyframes headerAnimation{
-    0%{
-        transform: rotate(0) translateY(-100%);
-        opacity: 0;
-        }
-    100%{
-        transform: rotate(0) translateY(0);
-        opacity: 1;
-        }
+@keyframes headerAnimation {
+  0% {
+    transform: rotate(0) translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0) translateY(0);
+    opacity: 1;
+  }
 }
 
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.booklist{
+  flex: 50%;
+}
+
+.addbook {
+  flex: 50%;
+}
