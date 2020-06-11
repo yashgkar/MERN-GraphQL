@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
   background-color: rgb(38, 70, 83);
   color: rgb(255, 255, 255);
 }
@@ -10,7 +11,6 @@ body {
 .header {
   display: flex;
   justify-content: center;
-  font-family: "Metal Mania", cursive;
   animation: headerAnimation 0.8s forwards 0s ease;
 }
 
@@ -35,13 +35,13 @@ body {
   }
 }
 
-.row{
+.row {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
-.booklist{
+.booklist {
   flex: 50%;
 }
 

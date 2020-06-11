@@ -4,6 +4,7 @@
   background-color: rgb(42, 157, 143);
   border-radius: 10px;
   height: 100%;
+  width: initial;
   animation: formAnimation 1s forwards 0s ease;
 }
 

@@ -16,8 +16,8 @@ class BookDetails extends Component {
           <p>{book.author.name}</p>
           <p>All books by {book.author.name}</p>
           <ul className="other-books">
-            {book.author.books.map((item) => {
-              return <li key={item.id}>{item.name}</li>;
+            {book.author.books.map((book) => {
+              return <li key={book.id}>{book.name}</li>;
             })}
           </ul>
         </div>
@@ -27,10 +27,9 @@ class BookDetails extends Component {
     }
   }
   render() {
-    console.log(this.props);
     return (
-      <div id="book-details">
-        {this.displayBookDetails()}
+      <div className="bookdetails">
+        <div id="book-details">{this.displayBookDetails()}</div>
       </div>
     );
   }
